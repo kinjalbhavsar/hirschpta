@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events &amp; Calendar | Hirsch PTA</title>
+  <meta name="description" content="Stay up to date with all Hirsch PTA events — view our calendar and add events directly to your Google or Apple Calendar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="events">
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">&#x1F43E; Hirsch PTA</a>
+      <ul class="nav-links">
+        <li><a href="index.html"       data-page="home">Home</a></li>
+        <li><a href="about.html"       data-page="about">About</a></li>
+        <li><a href="programs.html"    data-page="programs">Programs</a></li>
+        <li><a href="events.html"      data-page="events">Events</a></li>
+        <li><a href="fundraiser.html"  data-page="fundraiser">Bulldog Jog</a></li>
+        <li><a href="volunteer.html"   data-page="volunteer">Volunteer</a></li>
+        <li><a href="donate.html"      data-page="donate">Donate</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Events</div>
+      <h1 class="page-hero-title">Events &amp; Calendar</h1>
+      <p class="page-hero-sub">All Hirsch PTA events in one place — subscribe to never miss a thing.</p>
+    </div>
+  </div>
+
+  <!-- CALENDAR -->
+  <section class="section" id="calendar">
+    <div class="container">
+      <div class="section-label">Live Calendar</div>
+      <h2 class="section-title">PTA Event Calendar</h2>
+
+      <div class="calendar-wrapper">
+        <iframe
+          class="calendar-frame"
+          src="https://calendar.google.com/calendar/embed?src=pta.hirsch%40gmail.com&ctz=America%2FLos_Angeles&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&mode=MONTH&bgcolor=%23ffffff&color=%231a56db"
+          frameborder="0"
+          scrolling="no"
+          title="Hirsch PTA Event Calendar"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <div class="calendar-actions">
+        <a href="https://calendar.google.com/calendar/r?cid=pta.hirsch%40gmail.com" target="_blank" rel="noopener" class="btn btn-outline">
+          + Add to Google Calendar
+        </a>
+        <a href="https://calendar.google.com/calendar/ical/pta.hirsch%40gmail.com/public/basic.ics" target="_blank" rel="noopener" class="btn btn-outline">
+          + iCal / Apple Calendar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING EVENTS LIST -->
+  <section class="section section-alt" id="upcoming">
+    <div class="container">
+      <div class="section-label">Coming Up</div>
+      <h2 class="section-title">Upcoming Events</h2>
+      <p class="section-subtitle">A quick-glance list of the next few PTA events. For the full calendar, subscribe above.</p>
+
+      <div class="events-preview">
+
+        <div class="event-item">
+          <div class="event-date-badge">
+            <div class="event-date-month">May</div>
+            <div class="event-date-day">19</div>
+          </div>
+          <div class="event-info">
+            <div class="event-name">Teacher Appreciation Week Begins</div>
+            <div class="event-meta">May 19–23 &middot; O.N. Hirsch Elementary &middot; All week</div>
+          </div>
+          <span class="tag tag-community">Community</span>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-badge">
+            <div class="event-date-month">May</div>
+            <div class="event-date-day">20</div>
+          </div>
+          <div class="event-info">
+            <div class="event-name">PTA Association Meeting</div>
+            <div class="event-meta">7:00 PM &middot; Hirsch Library &middot; All parents welcome</div>
+          </div>
+          <span class="tag">Meeting</span>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-badge">
+            <div class="event-date-month">Jun</div>
+            <div class="event-date-day">TBD</div>
+          </div>
+          <div class="event-info">
+            <div class="event-name">Field Day</div>
+            <div class="event-meta">Date TBD &middot; O.N. Hirsch Elementary Field &middot; All students</div>
+          </div>
+          <span class="tag tag-athletics">Athletics</span>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-badge" style="background:var(--gold);">
+            <div class="event-date-month">Oct</div>
+            <div class="event-date-day">&#x1F43E;</div>
+          </div>
+          <div class="event-info">
+            <div class="event-name">Bulldog Jog 2026–27 — Save the Date!</div>
+            <div class="event-meta">October 2026 &middot; Details announced in August</div>
+          </div>
+          <span class="tag tag-community">Fundraiser</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE CTA -->
+  <div class="cta-band cta-band-dark">
+    <div class="container">
+      <h2>Never Miss an Event</h2>
+      <p>Subscribe to the Hirsch PTA calendar and get every event synced directly to your phone or computer.</p>
+      <div class="cta-band-btns">
+        <a href="https://calendar.google.com/calendar/r?cid=pta.hirsch%40gmail.com" target="_blank" rel="noopener" class="btn btn-gold">+ Google Calendar</a>
+        <a href="https://calendar.google.com/calendar/ical/pta.hirsch%40gmail.com/public/basic.ics" target="_blank" rel="noopener" class="btn btn-white-outline">+ iCal / Apple Calendar</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">&#x1F43E; Hirsch PTA</span>
+        <span>501(c)(3) &middot; EIN: 94-6184147</span>
+        <span>O.N. Hirsch Elementary &middot; Fremont, CA</span>
+      </div>
+      <nav class="footer-center">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="events.html">Events</a>
+        <a href="fundraiser.html">Bulldog Jog</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="donate.html">Donate</a>
+      </nav>
+      <div class="footer-right">
+        <a href="mailto:pta.hirsch@gmail.com">pta.hirsch@gmail.com</a><br>
+        <span style="margin-top:.3rem; display:block;">Built with &hearts; in Fremont, CA</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

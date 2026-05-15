@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bulldog Jog | Hirsch PTA</title>
+  <meta name="description" content="The Bulldog Jog is Hirsch PTA's biggest annual fundraiser. Learn how it works, see results, and donate to support Hirsch students." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .jog-hero {
+      min-height: 65vh;
+      display: flex;
+      align-items: center;
+      padding: calc(var(--nav-h) + 3rem) 2rem 4rem;
+      background: linear-gradient(135deg, #111827 0%, #1e3a8a 50%, #92400e 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .jog-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 60% 40%, rgba(245,158,11,.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .jog-hero-inner { max-width: var(--max-w); margin: 0 auto; position: relative; z-index: 1; }
+    .jog-hero-eyebrow {
+      font-family: var(--mono);
+      font-size: .85rem;
+      color: var(--gold);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeUp .5s .1s forwards;
+      margin-bottom: .75rem;
+    }
+    .jog-hero-title {
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 800;
+      letter-spacing: -2px;
+      color: #fff;
+      line-height: 1.05;
+      opacity: 0;
+      animation: fadeUp .5s .2s forwards;
+    }
+    .jog-hero-title .paw { color: var(--gold); }
+    .jog-hero-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,.75);
+      margin-top: 1rem;
+      max-width: 560px;
+      opacity: 0;
+      animation: fadeUp .5s .3s forwards;
+    }
+    .jog-hero-cta {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp .5s .4s forwards;
+    }
+  </style>
+</head>
+<body data-page="fundraiser">
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">&#x1F43E; Hirsch PTA</a>
+      <ul class="nav-links">
+        <li><a href="index.html"       data-page="home">Home</a></li>
+        <li><a href="about.html"       data-page="about">About</a></li>
+        <li><a href="programs.html"    data-page="programs">Programs</a></li>
+        <li><a href="events.html"      data-page="events">Events</a></li>
+        <li><a href="fundraiser.html"  data-page="fundraiser">Bulldog Jog</a></li>
+        <li><a href="volunteer.html"   data-page="volunteer">Volunteer</a></li>
+        <li><a href="donate.html"      data-page="donate">Donate</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="jog-hero">
+    <div class="jog-hero-inner">
+      <div class="jog-hero-eyebrow">&#x1F43E; Annual Fundraiser &middot; 2025–26</div>
+      <h1 class="jog-hero-title">
+        Bulldog <span class="paw">Jog</span><br>
+        2025–26
+      </h1>
+      <p class="jog-hero-sub">
+        Thank you to every runner, donor, and volunteer who made the 2025–26 Bulldog Jog a success!
+        Late donations are still welcome — every dollar supports Hirsch students.
+      </p>
+      <div class="jog-hero-cta">
+        <a href="https://my.cheddarup.com/c/hirsch-bulldog-run-2025-26/fundraiser/details" target="_blank" rel="noopener" class="btn btn-gold">Donate via CheddarUp &rarr;</a>
+        <a href="#how-it-works" class="btn btn-white-outline">How It Works</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <section class="section section-warm" id="results">
+    <div class="container">
+      <div class="section-label">2025–26 Results</div>
+      <h2 class="section-title">Thank You, Bulldog Nation!</h2>
+      <p class="section-subtitle">The 2025–26 Bulldog Jog is a wrap! Here's a snapshot of what we accomplished together. Final numbers will be updated shortly.</p>
+
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-number" id="raised-amount">TBD</div>
+          <div class="result-label">Raised for Hirsch Students</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">411</div>
+          <div class="result-label">Students Who Participated</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">TBD</div>
+          <div class="result-label">Laps Run</div>
+        </div>
+        <div class="result-card">
+          <div class="result-number">TBD</div>
+          <div class="result-label">Generous Donors</div>
+        </div>
+      </div>
+
+      <div style="margin-top:2.5rem;">
+        <div class="goal-bar-wrap">
+          <div class="fund-bar-label">Fundraising Goal Progress</div>
+          <div class="goal-bar"><div class="goal-fill" id="goal-fill" style="width:0%"></div></div>
+          <div class="goal-meta">
+            <span><strong id="pct-label">—</strong> of goal reached</span>
+            <span>Goal: <strong>TBD</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:1.5rem; font-size:.9rem; color:var(--text-muted); text-align:center;">
+        Final numbers pending. <a href="mailto:pta.hirsch@gmail.com" style="color:var(--accent);">Contact us</a> if you have questions.
+      </p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section-label">The Event</div>
+      <h2 class="section-title">How the Bulldog Jog Works</h2>
+      <p class="section-subtitle">Simple, fun, and impactful — here's how every Bulldog Jog comes together.</p>
+
+      <div class="steps-row">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-title">Students Collect Pledges</div>
+          <p class="step-desc">Students ask family, friends, and neighbors to sponsor them per lap or with a flat donation through CheddarUp's secure platform.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-title">Run Day!</div>
+          <p class="step-desc">Every student runs as many laps as they can around the school track in a festive, music-filled event — a true Hirsch community celebration.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-title">Funds Go to Hirsch</div>
+          <p class="step-desc">100% of proceeds stay at Hirsch — funding the programs, supplies, and events that make a Hirsch education exceptional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAVE THE DATE -->
+  <div class="cta-band cta-band-warm">
+    <div class="container">
+      <h2 style="color:var(--text);">&#x1F43E; Bulldog Jog 2026–27</h2>
+      <p>Mark your calendars! The Bulldog Jog returns in <strong>October 2026</strong>. Details and registration will open in August 2026.</p>
+      <div class="cta-band-btns">
+        <a href="events.html" class="btn btn-primary">Add to Calendar</a>
+        <a href="volunteer.html" class="btn btn-outline">Volunteer for Next Year</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LATE DONATIONS -->
+  <section class="section section-alt" id="donate">
+    <div class="container" style="text-align:center;">
+      <div class="section-label">Still Want to Give?</div>
+      <h2 class="section-title">Late Donations Welcome</h2>
+      <p class="section-subtitle">The Bulldog Jog may be over, but donations for Hirsch students are always appreciated. Every dollar goes directly to programs.</p>
+      <a href="https://my.cheddarup.com/c/hirsch-bulldog-run-2025-26/fundraiser/details" target="_blank" rel="noopener" class="btn btn-gold" style="font-size:1rem; padding:1rem 2.5rem;">
+        Donate via CheddarUp &rarr;
+      </a>
+      <p style="margin-top:1.25rem; font-size:.85rem; color:var(--text-muted);">
+        Hirsch PTA is a 501(c)(3) nonprofit &middot; EIN 94-6184147 &middot; Donations are tax-deductible
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common Questions</h2>
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary class="faq-q">When does the Bulldog Jog happen each year?</summary>
+          <p class="faq-a">The Bulldog Jog is held each October, typically in the first half of the month. Watch for the official announcement in the Back-to-School packet and on the PTA calendar in August.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">How do I make a donation?</summary>
+          <p class="faq-a">Donations are collected securely through CheddarUp. You can donate online at any time using the "Donate via CheddarUp" button on this page. We accept all major credit cards. Cash and check donations can also be dropped off at the school office — make checks payable to "Hirsch PTA."</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Is my donation tax-deductible?</summary>
+          <p class="faq-a">Yes! The Hirsch PTA is a registered 501(c)(3) nonprofit (EIN: 94-6184147). All donations are tax-deductible to the extent allowed by law. You will receive a receipt via email for online donations.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">Where does the money go?</summary>
+          <p class="faq-a">100% of Bulldog Jog proceeds go directly to Hirsch students. As with all PTA donations, 80% funds classroom supplies and field trips; 20% funds school-wide programs like assemblies, cultural events, and arts enrichment.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">How can I volunteer for the Bulldog Jog?</summary>
+          <p class="faq-a">We love volunteers! We need help with setup, running the event day, cheering on students, managing the finish line, and cleanup. Visit our <a href="volunteer.html" style="color:var(--accent);">Volunteer page</a> or email <a href="mailto:pta.hirsch@gmail.com" style="color:var(--accent);">pta.hirsch@gmail.com</a> to sign up.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-q">My child's school isn't Hirsch — can I still donate?</summary>
+          <p class="faq-a">Absolutely! Donations from outside the Hirsch community are warmly welcome. As a 501(c)(3) nonprofit, we can accept donations from anyone who wants to support elementary education in Fremont.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">&#x1F43E; Hirsch PTA</span>
+        <span>501(c)(3) &middot; EIN: 94-6184147</span>
+        <span>O.N. Hirsch Elementary &middot; Fremont, CA</span>
+      </div>
+      <nav class="footer-center">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="events.html">Events</a>
+        <a href="fundraiser.html">Bulldog Jog</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="donate.html">Donate</a>
+      </nav>
+      <div class="footer-right">
+        <a href="mailto:pta.hirsch@gmail.com">pta.hirsch@gmail.com</a><br>
+        <span style="margin-top:.3rem; display:block;">Built with &hearts; in Fremont, CA</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* Animate goal bar on scroll */
+    const fill = document.getElementById('goal-fill');
+    const pctLabel = document.getElementById('pct-label');
+    const TARGET_PCT = 85;
+    const barObs = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting) {
+        fill.style.width = TARGET_PCT + '%';
+        pctLabel.textContent = TARGET_PCT + '%';
+        barObs.disconnect();
+      }
+    }, { threshold: .3 });
+    if (fill) barObs.observe(fill.closest('.goal-bar-wrap'));
+  </script>
+</body>
+</html>
