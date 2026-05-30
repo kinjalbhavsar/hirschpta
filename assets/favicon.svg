@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Hirsch PTA paw">
+  <rect width="64" height="64" rx="14" fill="#1a56db"/>
+  <g fill="#f59e0b">
+    <ellipse cx="32" cy="40" rx="13" ry="10"/>
+    <ellipse cx="18" cy="26" rx="5.5" ry="7"/>
+    <ellipse cx="46" cy="26" rx="5.5" ry="7"/>
+    <ellipse cx="25" cy="16" rx="5" ry="6.5"/>
+    <ellipse cx="39" cy="16" rx="5" ry="6.5"/>
+  </g>
+</svg>

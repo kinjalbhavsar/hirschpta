@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Donate &amp; Sponsors | Hirsch PTA</title>
   <meta name="description" content="Support Hirsch students — donate online, by check, or sponsor the PTA. 100% of donations go directly to programs and classrooms." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body data-page="donate">
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- NAV -->
   <nav class="nav" id="nav">
@@ -21,18 +24,19 @@
         <li><a href="/about"       data-page="about">About</a></li>
         <li><a href="/programs"    data-page="programs">Programs</a></li>
         <li><a href="/events"      data-page="events">Events</a></li>
+        <li><a href="/gallery"     data-page="gallery">Photos</a></li>
         <li><a href="/fundraiser"  data-page="fundraiser">Bulldog Jog</a></li>
         <li><a href="/volunteer"   data-page="volunteer">Volunteer</a></li>
         <li><a href="/donate"      data-page="donate">Donate</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
   <!-- PAGE HERO -->
-  <div class="page-hero">
+  <div class="page-hero" id="main">
     <div class="page-hero-inner">
       <div class="breadcrumb"><a href="/">Home</a> / Donate</div>
       <h1 class="page-hero-title">Support Hirsch Students</h1>
@@ -123,6 +127,20 @@
 
       <div class="tier-grid">
 
+        <div class="tier-card tier-card-platinum">
+          <span class="tier-badge tier-badge-platinum">&#x1F48E; Platinum Partner</span>
+          <div class="tier-amount tier-amount-platinum">$2,500+</div>
+          <hr class="tier-divider" />
+          <ul class="tier-benefits">
+            <li class="tier-benefit"><span class="tier-check">&#10003;</span> Premier logo placement — homepage hero &amp; every page footer</li>
+            <li class="tier-benefit"><span class="tier-check">&#10003;</span> Largest logo on Donate page &amp; all Bulldog Jog materials</li>
+            <li class="tier-benefit"><span class="tier-check">&#10003;</span> Banner recognition at the Bulldog Jog &amp; major events</li>
+            <li class="tier-benefit"><span class="tier-check">&#10003;</span> Featured social media spotlight post</li>
+            <li class="tier-benefit"><span class="tier-check">&#10003;</span> Logo &amp; link in every PTA newsletter all year</li>
+          </ul>
+          <a href="mailto:pta.hirsch@gmail.com?subject=Platinum%20Sponsorship%20Inquiry" class="btn btn-primary">Become a Platinum Sponsor</a>
+        </div>
+
         <div class="tier-card tier-card-gold">
           <div class="tier-featured">Most Popular</div>
           <span class="tier-badge tier-badge-gold">&#x2B50; Gold Partner</span>
@@ -187,39 +205,64 @@
     <div class="container">
       <div class="section-label">Current Sponsors</div>
       <h2 class="section-title">Thank You, Sponsors!</h2>
-      <p class="section-subtitle">These businesses are investing in the future of Hirsch students. Please support them.</p>
+      <p class="section-subtitle">These local businesses are investing in the future of Hirsch students — logo size reflects sponsorship tier. Please support the people who support our school.</p>
 
-      <div class="sponsor-logos-section">
-        <div class="sponsor-logos-title">
-          <span class="sponsor-tier-badge-inline badge-gold-inline">&#x2B50; Gold</span>
-        </div>
-        <div class="logos-grid">
-          <div class="logo-tile-placeholder">Your Business Here</div>
-          <div class="logo-tile-placeholder">Your Business Here</div>
-        </div>
-      </div>
+      <!--
+        ===========================================================
+        HOW TO ADD A REAL SPONSOR:
+        Drop the logo image in assets/sponsors/<tier>/ and replace a
+        ".sponsor-tile-empty" div below with, e.g.:
+          <a class="sponsor-tile" href="https://sponsor-site.com" target="_blank" rel="noopener">
+            <img src="assets/sponsors/gold/acme.png" alt="Acme Co.">
+          </a>
+        Tiles automatically size by the tier of the row they sit in.
+        ===========================================================
+      -->
+      <div class="sponsor-wall">
 
-      <div class="sponsor-logos-section">
-        <div class="sponsor-logos-title">
-          <span class="sponsor-tier-badge-inline badge-silver-inline">&#x26AA; Silver</span>
+        <div class="sponsor-tier-row sponsor-tier-platinum">
+          <div class="sponsor-tier-heading">
+            <span class="sponsor-tier-name tier-name-platinum">&#x1F48E; Platinum</span>
+          </div>
+          <div class="sponsor-tiles">
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+          </div>
         </div>
-        <div class="logos-grid">
-          <div class="logo-tile-placeholder">Your Business Here</div>
-          <div class="logo-tile-placeholder">Your Business Here</div>
-          <div class="logo-tile-placeholder">Your Business Here</div>
-        </div>
-      </div>
 
-      <div class="sponsor-logos-section">
-        <div class="sponsor-logos-title">
-          <span class="sponsor-tier-badge-inline badge-bronze-inline">&#x1F7E4; Bronze</span>
+        <div class="sponsor-tier-row sponsor-tier-gold">
+          <div class="sponsor-tier-heading">
+            <span class="sponsor-tier-name tier-name-gold">&#x2B50; Gold</span>
+          </div>
+          <div class="sponsor-tiles">
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+          </div>
         </div>
-        <div class="logos-grid">
-          <div class="logo-tile-placeholder">Business</div>
-          <div class="logo-tile-placeholder">Business</div>
-          <div class="logo-tile-placeholder">Business</div>
-          <div class="logo-tile-placeholder">Business</div>
+
+        <div class="sponsor-tier-row sponsor-tier-silver">
+          <div class="sponsor-tier-heading">
+            <span class="sponsor-tier-name tier-name-silver">&#x26AA; Silver</span>
+          </div>
+          <div class="sponsor-tiles">
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+          </div>
         </div>
+
+        <div class="sponsor-tier-row sponsor-tier-bronze">
+          <div class="sponsor-tier-heading">
+            <span class="sponsor-tier-name tier-name-bronze">&#x1F7E4; Bronze</span>
+          </div>
+          <div class="sponsor-tiles">
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+          </div>
+        </div>
+
       </div>
 
       <div style="margin-top:3rem; text-align:center;">
@@ -254,6 +297,7 @@
         <a href="/about">About</a>
         <a href="/programs">Programs</a>
         <a href="/events">Events</a>
+        <a href="/gallery">Photos</a>
         <a href="/fundraiser">Bulldog Jog</a>
         <a href="/volunteer">Volunteer</a>
         <a href="/donate">Donate</a>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photos | Hirsch PTA</title>
+  <meta name="description" content="Photos from the latest Hirsch PTA events — the Bulldog Jog, Harvest Festival, Multicultural Week, Talent Show, and more." />
+  <meta property="og:title" content="Hirsch PTA — Event Photos" />
+  <meta property="og:description" content="Moments from our latest Hirsch Elementary PTA events." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hirschpta.org/gallery" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="gallery">
+
+  <a class="skip-link" href="#gallery">Skip to photos</a>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/">&#x1F43E; Hirsch PTA</a>
+      <ul class="nav-links">
+        <li><a href="/"       data-page="home">Home</a></li>
+        <li><a href="/about"       data-page="about">About</a></li>
+        <li><a href="/programs"    data-page="programs">Programs</a></li>
+        <li><a href="/events"      data-page="events">Events</a></li>
+        <li><a href="/gallery"     data-page="gallery">Photos</a></li>
+        <li><a href="/fundraiser"  data-page="fundraiser">Bulldog Jog</a></li>
+        <li><a href="/volunteer"   data-page="volunteer">Volunteer</a></li>
+        <li><a href="/donate"      data-page="donate">Donate</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="/">Home</a> / Photos</div>
+      <h1 class="page-hero-title">Event Photos</h1>
+      <p class="page-hero-sub">A look back at the moments that make Hirsch special — from the Bulldog Jog to Multicultural Week. Tap any photo to view it larger.</p>
+    </div>
+  </div>
+
+  <!--
+    ============================================================
+    HOW TO ADD REAL EVENT PHOTOS
+    1. Add your image files (jpg/png/webp) to assets/gallery/
+    2. Replace a placeholder below. Each photo is an <a class="gallery-item">
+       with a data-full attribute (large image for the lightbox) wrapping a
+       thumbnail <img>. Keep the .gallery-item-caption span for hover labels.
+       Example:
+         <a class="gallery-item" data-full="assets/gallery/jog-finish.jpg"
+            data-caption="Crossing the finish line — Bulldog Jog 2025">
+           <img src="assets/gallery/jog-finish.jpg" alt="Student crossing the finish line" loading="lazy">
+           <span class="gallery-item-caption">Crossing the finish line</span>
+         </a>
+    3. Only post photos you have permission/consent to publish (kids' photos
+       especially). When in doubt, leave the placeholder.
+    ============================================================
+  -->
+
+  <section class="section" id="gallery">
+    <div class="container">
+
+      <div class="gallery-group">
+        <div class="gallery-group-head">
+          <h2 class="gallery-group-title">Bulldog Jog 2025–26</h2>
+          <span class="gallery-group-date">October 2025</span>
+        </div>
+        <div class="gallery-grid">
+          <a class="gallery-item" data-full="assets/gallery/bulldog-jog-1.svg" data-caption="Bulldog Jog 2025 — our biggest fundraiser of the year">
+            <img src="assets/gallery/bulldog-jog-1.svg" alt="Bulldog Jog event" loading="lazy">
+            <span class="gallery-item-caption">Bulldog Jog 2025</span>
+          </a>
+          <a class="gallery-item" data-full="assets/gallery/bulldog-jog-2.svg" data-caption="Run Day — students running laps to raise funds for Hirsch">
+            <img src="assets/gallery/bulldog-jog-2.svg" alt="Students running on run day" loading="lazy">
+            <span class="gallery-item-caption">Run Day</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery-group">
+        <div class="gallery-group-head">
+          <h2 class="gallery-group-title">Harvest Festival</h2>
+          <span class="gallery-group-date">October 2025</span>
+        </div>
+        <div class="gallery-grid">
+          <a class="gallery-item" data-full="assets/gallery/harvest-1.svg" data-caption="Harvest Festival — a beloved fall tradition for Hirsch families">
+            <img src="assets/gallery/harvest-1.svg" alt="Harvest Festival" loading="lazy">
+            <span class="gallery-item-caption">Harvest Festival</span>
+          </a>
+          <a class="gallery-item" data-full="assets/gallery/harvest-2.svg" data-caption="Games, food, and treats at the Harvest Festival">
+            <img src="assets/gallery/harvest-2.svg" alt="Games and treats at the festival" loading="lazy">
+            <span class="gallery-item-caption">Games &amp; Treats</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery-group">
+        <div class="gallery-group-head">
+          <h2 class="gallery-group-title">Multicultural Week</h2>
+          <span class="gallery-group-date">Spring 2026</span>
+        </div>
+        <div class="gallery-grid">
+          <a class="gallery-item" data-full="assets/gallery/multicultural-1.svg" data-caption="Multicultural Week — celebrating the diversity of our Hirsch community">
+            <img src="assets/gallery/multicultural-1.svg" alt="Multicultural Week" loading="lazy">
+            <span class="gallery-item-caption">Multicultural Week</span>
+          </a>
+          <a class="gallery-item" data-full="assets/gallery/multicultural-2.svg" data-caption="Cultural showcase — food, music, and dance from around the world">
+            <img src="assets/gallery/multicultural-2.svg" alt="Cultural showcase" loading="lazy">
+            <span class="gallery-item-caption">Cultural Showcase</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="gallery-group">
+        <div class="gallery-group-head">
+          <h2 class="gallery-group-title">Talent Show</h2>
+          <span class="gallery-group-date">Spring 2026</span>
+        </div>
+        <div class="gallery-grid">
+          <a class="gallery-item" data-full="assets/gallery/talent-show-1.svg" data-caption="Talent Show — Hirsch students take the stage">
+            <img src="assets/gallery/talent-show-1.svg" alt="Talent Show" loading="lazy">
+            <span class="gallery-item-caption">Talent Show</span>
+          </a>
+          <a class="gallery-item" data-full="assets/gallery/talent-show-2.svg" data-caption="On stage — singing, dancing, and more at the annual Talent Show">
+            <img src="assets/gallery/talent-show-2.svg" alt="Student performing on stage" loading="lazy">
+            <span class="gallery-item-caption">On Stage</span>
+          </a>
+        </div>
+      </div>
+
+      <p style="margin-top:1rem; font-size:.92rem; color:var(--text-muted);">
+        Have great photos from a Hirsch event? Email them to
+        <a href="mailto:pta.hirsch@gmail.com?subject=Event%20Photos" style="color:var(--accent);">pta.hirsch@gmail.com</a>
+        and we'll add them here. We only publish photos with appropriate permission.
+      </p>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous photo">&#8249;</button>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next photo">&#8250;</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      <figcaption class="lightbox-caption" id="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-band cta-band-warm">
+    <div class="container">
+      <h2 style="color:var(--text);">Be Part of the Next Photo</h2>
+      <p>Every event you see here happens because Hirsch families show up. Join the PTA, volunteer, or donate — and make the next memory with us.</p>
+      <div class="cta-band-btns">
+        <a href="https://jointotem.com/ca/fremont/o-n-hirsch-elementary-pta" target="_blank" rel="noopener" class="btn btn-primary">Join the PTA &rarr;</a>
+        <a href="/volunteer" class="btn btn-gold-outline">Volunteer</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">&#x1F43E; Hirsch PTA</span>
+        <span>501(c)(3) &middot; EIN: 94-6184147</span>
+        <span>O.N. Hirsch Elementary &middot; Fremont, CA</span>
+      </div>
+      <nav class="footer-center">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/programs">Programs</a>
+        <a href="/events">Events</a>
+        <a href="/gallery">Photos</a>
+        <a href="/fundraiser">Bulldog Jog</a>
+        <a href="/volunteer">Volunteer</a>
+        <a href="/donate">Donate</a>
+      </nav>
+      <div class="footer-right">
+        <a href="mailto:pta.hirsch@gmail.com">pta.hirsch@gmail.com</a><br>
+        <span style="margin-top:.3rem; display:block;">Built with &hearts; in Fremont, CA</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

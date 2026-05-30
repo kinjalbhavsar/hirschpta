@@ -9,12 +9,35 @@
   <meta property="og:description" content="Building community at O.N. Hirsch Elementary. Join the PTA, donate, or volunteer." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://hirschpta.org/" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "O.N. Hirsch Elementary PTA",
+    "alternateName": "Hirsch PTA",
+    "url": "https://hirschpta.org/",
+    "email": "pta.hirsch@gmail.com",
+    "description": "Parent-run 501(c)(3) nonprofit supporting students at O.N. Hirsch Elementary in Fremont, CA.",
+    "taxID": "94-6184147",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "41399 Chapel Way",
+      "addressLocality": "Fremont",
+      "addressRegion": "CA",
+      "postalCode": "94538",
+      "addressCountry": "US"
+    }
+  }
+  </script>
 </head>
 <body data-page="home">
+
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- NAV -->
   <nav class="nav" id="nav">
@@ -25,18 +48,19 @@
         <li><a href="/about"       data-page="about">About</a></li>
         <li><a href="/programs"    data-page="programs">Programs</a></li>
         <li><a href="/events"      data-page="events">Events</a></li>
+        <li><a href="/gallery"     data-page="gallery">Photos</a></li>
         <li><a href="/fundraiser"  data-page="fundraiser">Bulldog Jog</a></li>
         <li><a href="/volunteer"   data-page="volunteer">Volunteer</a></li>
         <li><a href="/donate"      data-page="donate">Donate</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="hero">
+  <section class="hero" id="hero" tabindex="-1"><span id="main"></span>
     <div class="hero-inner">
       <p class="hero-eyebrow">O.N. Hirsch Elementary &middot; Fremont, CA &middot; K–5</p>
       <h1 class="hero-title">
@@ -212,6 +236,37 @@
     </div>
   </section>
 
+  <!-- PHOTO TEASER -->
+  <section class="section section-alt" id="photos-preview">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-label">Community</div>
+          <h2 class="section-title" style="margin-bottom:0">Moments from Hirsch</h2>
+        </div>
+        <a href="/gallery" class="view-all">View all photos &rarr;</a>
+      </div>
+      <div class="photo-teaser-grid">
+        <a class="gallery-item" href="/gallery">
+          <img src="assets/gallery/bulldog-jog-1.svg" alt="Bulldog Jog" loading="lazy">
+          <span class="gallery-item-caption">Bulldog Jog</span>
+        </a>
+        <a class="gallery-item" href="/gallery">
+          <img src="assets/gallery/harvest-1.svg" alt="Harvest Festival" loading="lazy">
+          <span class="gallery-item-caption">Harvest Festival</span>
+        </a>
+        <a class="gallery-item" href="/gallery">
+          <img src="assets/gallery/multicultural-1.svg" alt="Multicultural Week" loading="lazy">
+          <span class="gallery-item-caption">Multicultural Week</span>
+        </a>
+        <a class="gallery-item" href="/gallery">
+          <img src="assets/gallery/talent-show-1.svg" alt="Talent Show" loading="lazy">
+          <span class="gallery-item-caption">Talent Show</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- JOIN CTA -->
   <div class="cta-band">
     <div class="container">
@@ -232,13 +287,28 @@
     <div class="container" style="text-align:center;">
       <div class="section-label">Our Supporters</div>
       <h2 class="section-title">Thank You to Our Sponsors</h2>
-      <p class="section-subtitle" style="margin:0 auto 2.5rem;">Local businesses that support Hirsch PTA help fund programs that benefit every student. We're grateful for every partnership.</p>
-      <div class="sponsors-strip">
-        <div class="sponsor-logo-placeholder">Your Logo Here</div>
-        <div class="sponsor-logo-placeholder">Your Logo Here</div>
-        <div class="sponsor-logo-placeholder">Your Logo Here</div>
+      <p class="section-subtitle" style="margin:0 auto 2.5rem;">Local businesses that support Hirsch PTA help fund programs that benefit every student — recognized in tiers from Platinum to Bronze. We're grateful for every partnership.</p>
+      <div class="sponsor-wall" style="text-align:left; max-width:760px; margin:0 auto 2.5rem;">
+        <div class="sponsor-tier-row sponsor-tier-platinum">
+          <div class="sponsor-tier-heading">
+            <span class="sponsor-tier-name tier-name-platinum">&#x1F48E; Platinum</span>
+          </div>
+          <div class="sponsor-tiles">
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+          </div>
+        </div>
+        <div class="sponsor-tier-row sponsor-tier-gold">
+          <div class="sponsor-tier-heading">
+            <span class="sponsor-tier-name tier-name-gold">&#x2B50; Gold</span>
+          </div>
+          <div class="sponsor-tiles">
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+            <div class="sponsor-tile sponsor-tile-empty">Your business here</div>
+          </div>
+        </div>
       </div>
-      <a href="/donate#sponsors" class="btn btn-outline">Become a Sponsor &rarr;</a>
+      <a href="/donate#sponsors" class="btn btn-gold">Become a Sponsor &rarr;</a>
     </div>
   </section>
 
@@ -255,6 +325,7 @@
         <a href="/about">About</a>
         <a href="/programs">Programs</a>
         <a href="/events">Events</a>
+        <a href="/gallery">Photos</a>
         <a href="/fundraiser">Bulldog Jog</a>
         <a href="/volunteer">Volunteer</a>
         <a href="/donate">Donate</a>
