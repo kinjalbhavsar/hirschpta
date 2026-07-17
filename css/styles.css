@@ -286,7 +286,7 @@ img { display: block; max-width: 100%; }
    Hero (homepage)
    ============================================================ */
 .hero {
-  min-height: 100vh;
+  min-height: min(85vh, 780px);
   display: flex;
   align-items: center;
   position: relative;
@@ -1677,6 +1677,46 @@ summary:focus-visible,
   .reveal { opacity: 1 !important; transform: none !important; }
   [class*="hero-"][style], .hero-eyebrow, .hero-title, .hero-sub, .hero-cta { opacity: 1 !important; }
 }
+
+/* ============================================================
+   SVG icons (sprite injected by js/layout.js)
+   ============================================================ */
+.icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+.icon-logo-paw { vertical-align: -0.14em; }
+
+/* Icon holders inherit their size from the existing font-size rules;
+   tint them with the brand accent */
+.program-highlight-icon,
+.program-icon,
+.benefit-icon,
+.community-icon,
+.donate-method-icon,
+.vol-icon,
+.doc-icon {
+  color: var(--accent);
+  line-height: 1;
+}
+
+/* Monogram board avatars */
+.board-avatar-mono {
+  font-family: var(--mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  letter-spacing: .5px;
+}
+.board-avatar .icon { color: var(--accent); }
 
 /* ============================================================
    Meetings & transparency page
