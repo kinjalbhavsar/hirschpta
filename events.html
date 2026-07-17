@@ -4,36 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Events &amp; Calendar | Hirsch PTA</title>
-  <meta name="description" content="Stay up to date with all Hirsch PTA events — view our calendar and add events directly to your Google or Apple Calendar." />
+  <meta name="description" content="Hirsch PTA events, meetings, and calendar — subscribe to Google Calendar or iCal and never miss a school event in Fremont, CA." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body data-page="events">
 
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="nav-logo" href="/">&#x1F43E; Hirsch PTA</a>
-      <ul class="nav-links">
-        <li><a href="/"       data-page="home">Home</a></li>
-        <li><a href="/about"       data-page="about">About</a></li>
-        <li><a href="/programs"    data-page="programs">Programs</a></li>
-        <li><a href="/events"      data-page="events">Events</a></li>
-        <li><a href="/gallery"     data-page="gallery">Photos</a></li>
-        <li><a href="/fundraiser"  data-page="fundraiser">Bulldog Jog</a></li>
-        <li><a href="/volunteer"   data-page="volunteer">Volunteer</a></li>
-        <li><a href="/donate"      data-page="donate">Donate</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <div data-nav></div>
 
   <!-- PAGE HERO -->
   <div class="page-hero" id="main">
@@ -75,46 +57,34 @@
   <!-- UPCOMING EVENTS LIST -->
   <section class="section section-alt" id="upcoming">
     <div class="container">
-      <div class="section-label">Coming Up</div>
-      <h2 class="section-title">Upcoming Events</h2>
-      <p class="section-subtitle">A quick-glance list of the next few PTA events. For the full calendar, subscribe above.</p>
+      <div class="section-label">Coming Up &middot; 2026–27</div>
+      <h2 class="section-title">Save the Dates</h2>
+      <p class="section-subtitle">The big moments of the 2026–27 school year. Exact dates are announced in August — subscribe above and they'll land on your calendar automatically.</p>
 
       <div class="events-preview">
 
         <div class="event-item">
           <div class="event-date-badge">
-            <div class="event-date-month">May</div>
-            <div class="event-date-day">19</div>
+            <div class="event-date-month">Aug</div>
+            <div class="event-date-day">11</div>
           </div>
           <div class="event-info">
-            <div class="event-name">Teacher Appreciation Week Begins</div>
-            <div class="event-meta">May 19–23 &middot; O.N. Hirsch Elementary &middot; All week</div>
+            <div class="event-name">First Day of School — Welcome Back, Bulldogs!</div>
+            <div class="event-meta">Tuesday, August 11, 2026 &middot; O.N. Hirsch Elementary</div>
           </div>
           <span class="tag tag-community">Community</span>
         </div>
 
         <div class="event-item">
           <div class="event-date-badge">
-            <div class="event-date-month">May</div>
-            <div class="event-date-day">20</div>
+            <div class="event-date-month">Sep</div>
+            <div class="event-date-day">TBA</div>
           </div>
           <div class="event-info">
-            <div class="event-name">PTA Association Meeting</div>
-            <div class="event-meta">7:00 PM &middot; Hirsch Library &middot; All parents welcome</div>
+            <div class="event-name">First PTA Association Meeting</div>
+            <div class="event-meta">September 2026 &middot; Hirsch Library &middot; All families welcome</div>
           </div>
           <span class="tag">Meeting</span>
-        </div>
-
-        <div class="event-item">
-          <div class="event-date-badge">
-            <div class="event-date-month">Jun</div>
-            <div class="event-date-day">TBD</div>
-          </div>
-          <div class="event-info">
-            <div class="event-name">Field Day</div>
-            <div class="event-meta">Date TBD &middot; O.N. Hirsch Elementary Field &middot; All students</div>
-          </div>
-          <span class="tag tag-athletics">Athletics</span>
         </div>
 
         <div class="event-item">
@@ -123,12 +93,148 @@
             <div class="event-date-day">&#x1F43E;</div>
           </div>
           <div class="event-info">
-            <div class="event-name">Bulldog Jog 2026–27 — Save the Date!</div>
-            <div class="event-meta">October 2026 &middot; Details announced in August</div>
+            <div class="event-name">Bulldog Jog 2026–27</div>
+            <div class="event-meta">October 2026 &middot; Our biggest fundraiser of the year</div>
           </div>
           <span class="tag tag-community">Fundraiser</span>
         </div>
 
+        <div class="event-item">
+          <div class="event-date-badge">
+            <div class="event-date-month">Oct</div>
+            <div class="event-date-day">TBA</div>
+          </div>
+          <div class="event-info">
+            <div class="event-name">Harvest Festival</div>
+            <div class="event-meta">October 2026 &middot; Games, food, music &amp; community fun</div>
+          </div>
+          <span class="tag tag-community">Community</span>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-badge">
+            <div class="event-date-month">Nov</div>
+            <div class="event-date-day">TBA</div>
+          </div>
+          <div class="event-info">
+            <div class="event-name">Thanksgiving Luncheon</div>
+            <div class="event-meta">November 2026 &middot; Students, teachers &amp; families together</div>
+          </div>
+          <span class="tag tag-community">Community</span>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date-badge">
+            <div class="event-date-month">Spr</div>
+            <div class="event-date-day">'27</div>
+          </div>
+          <div class="event-info">
+            <div class="event-name">Multicultural Week &middot; Talent Show &middot; Field Day</div>
+            <div class="event-meta">Spring 2027 &middot; Dates announced during the year</div>
+          </div>
+          <span class="tag tag-arts">Spring</span>
+        </div>
+
+      </div>
+
+      <p style="margin-top:1.5rem; font-size:.9rem; color:var(--text-muted);">
+        Looking for meeting agendas and minutes? They live on the
+        <a href="/meetings" style="color:var(--accent);">Meetings &amp; Documents</a> page.
+      </p>
+    </div>
+  </section>
+
+  <!-- FUSD SCHOOL YEAR -->
+  <section class="section" id="school-year">
+    <div class="container">
+      <div class="section-label">District Dates</div>
+      <h2 class="section-title">FUSD 2026–27 at a Glance</h2>
+      <p class="section-subtitle">
+        Key dates from the official
+        <a href="https://fremontunified.org/schedule-news/calendar/" target="_blank" rel="noopener" style="color:var(--accent);">FUSD instructional calendar</a> —
+        handy for planning around PTA events. Site-specific schedules can vary; always check with the school office.
+      </p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; align-items:start;">
+        <div class="facts-card" style="position:static;">
+          <div class="facts-card-title">Fall 2026</div>
+          <div class="fact-item">
+            <span class="fact-label">First Day of School</span>
+            <span class="fact-value">Tue, Aug 11</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Labor Day (no school)</span>
+            <span class="fact-value">Mon, Sep 7</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Family Conferences</span>
+            <span class="fact-value">Oct 23 &amp; Nov 20</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Veterans Day (no school)</span>
+            <span class="fact-value">Wed, Nov 11</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Fall Recess</span>
+            <span class="fact-value">Nov 23–27</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Winter Break</span>
+            <span class="fact-value">Dec 21 – Jan 4</span>
+          </div>
+        </div>
+
+        <div class="facts-card" style="position:static;">
+          <div class="facts-card-title">Winter &amp; Spring 2027</div>
+          <div class="fact-item">
+            <span class="fact-label">MLK Jr. Day (no school)</span>
+            <span class="fact-value">Mon, Jan 18</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Non-Student Day</span>
+            <span class="fact-value">Fri, Feb 12</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Presidents' Day (no school)</span>
+            <span class="fact-value">Mon, Feb 15</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Spring Break</span>
+            <span class="fact-value">Mar 15–19</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Memorial Day (no school)</span>
+            <span class="fact-value">Mon, May 31</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Last Day of School</span>
+            <span class="fact-value">Tue, Jun 1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-label" style="margin-top:3.5rem; margin-bottom:1.25rem;">School Resources</div>
+      <div class="community-grid">
+        <a href="https://fremontunified.org/students-community/support/parent-student-handbook/" target="_blank" rel="noopener" class="community-card">
+          <span class="community-icon">&#128214;</span>
+          <span class="community-name">FUSD Parent-Student Handbook</span>
+          <span class="community-desc">Rights, responsibilities, and district policies — available in multiple languages</span>
+        </a>
+        <a href="https://fremontunified.org/schedule-news/calendar/" target="_blank" rel="noopener" class="community-card">
+          <span class="community-icon">&#128198;</span>
+          <span class="community-name">FUSD Instructional Calendar</span>
+          <span class="community-desc">The official 2026–27 district calendar, straight from the source</span>
+        </a>
+        <a href="https://fremontunified.org/hirsch/" target="_blank" rel="noopener" class="community-card">
+          <span class="community-icon">&#127979;</span>
+          <span class="community-name">Hirsch School Website</span>
+          <span class="community-desc">Bell schedules, office hours, and school announcements from FUSD</span>
+        </a>
+        <a href="/meetings" class="community-card">
+          <span class="community-icon">&#128196;</span>
+          <span class="community-name">PTA Documents</span>
+          <span class="community-desc">Our own meeting agendas, minutes, budget, and bylaws</span>
+        </a>
       </div>
     </div>
   </section>
@@ -145,31 +251,9 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-left">
-        <span class="footer-logo">&#x1F43E; Hirsch PTA</span>
-        <span>501(c)(3) &middot; EIN: 94-6184147</span>
-        <span>O.N. Hirsch Elementary &middot; Fremont, CA</span>
-      </div>
-      <nav class="footer-center">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/programs">Programs</a>
-        <a href="/events">Events</a>
-        <a href="/gallery">Photos</a>
-        <a href="/fundraiser">Bulldog Jog</a>
-        <a href="/volunteer">Volunteer</a>
-        <a href="/donate">Donate</a>
-      </nav>
-      <div class="footer-right">
-        <a href="mailto:pta.hirsch@gmail.com">pta.hirsch@gmail.com</a><br>
-        <span style="margin-top:.3rem; display:block;">Built with &hearts; in Fremont, CA</span>
-      </div>
-    </div>
-  </footer>
+  <div data-footer></div>
 
+  <script src="js/layout.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

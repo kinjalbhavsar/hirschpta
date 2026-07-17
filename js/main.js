@@ -19,11 +19,17 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-/* Active nav link — driven by data-page on <body> */
+/* Active nav link — driven by data-page on <body>.
+   Group parents (li[data-pages]) also highlight when a child page is active. */
 const currentPage = document.body.dataset.page;
 if (currentPage) {
-  navLinks.querySelectorAll('a').forEach(a => {
+  navLinks.querySelectorAll('a[data-page]').forEach(a => {
     if (a.dataset.page === currentPage) a.classList.add('active');
+  });
+  navLinks.querySelectorAll('li[data-pages]').forEach(li => {
+    if (li.dataset.pages.split(' ').includes(currentPage)) {
+      li.querySelector('.nav-group')?.classList.add('active');
+    }
   });
 }
 

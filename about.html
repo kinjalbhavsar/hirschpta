@@ -4,36 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | Hirsch PTA</title>
-  <meta name="description" content="Learn about the Hirsch Elementary PTA — our mission, board of directors, and how we support 411 students in Fremont, CA." />
+  <meta name="description" content="Learn about the Hirsch Elementary PTA — our mission, board of directors, open positions, and how we support 411 students in Fremont, CA." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body data-page="about">
 
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="nav-logo" href="/">&#x1F43E; Hirsch PTA</a>
-      <ul class="nav-links">
-        <li><a href="/"       data-page="home">Home</a></li>
-        <li><a href="/about"       data-page="about">About</a></li>
-        <li><a href="/programs"    data-page="programs">Programs</a></li>
-        <li><a href="/events"      data-page="events">Events</a></li>
-        <li><a href="/gallery"     data-page="gallery">Photos</a></li>
-        <li><a href="/fundraiser"  data-page="fundraiser">Bulldog Jog</a></li>
-        <li><a href="/volunteer"   data-page="volunteer">Volunteer</a></li>
-        <li><a href="/donate"      data-page="donate">Donate</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <div data-nav></div>
 
   <!-- PAGE HERO -->
   <div class="page-hero" id="main">
@@ -64,6 +46,11 @@
             As a chapter of the National PTA and California State PTA, we're part of the largest
             child advocacy organization in the United States. Local decisions and funds stay local —
             100% of what we raise goes directly back to Hirsch students and families.
+          </p>
+          <p>
+            We also believe in running in the open: association meetings are open to everyone, and our
+            agendas, minutes, and budget are available to all members on the
+            <a href="/meetings" style="color:var(--accent);">Meetings &amp; Documents</a> page.
           </p>
 
           <div class="fund-bar-wrap" style="margin-top:2rem;">
@@ -111,7 +98,7 @@
           </div>
           <div class="fact-item">
             <span class="fact-label">Membership</span>
-            <a class="fact-value fact-link" href="https://jointotem.com/ca/fremont/o-n-hirsch-elementary-pta" target="_blank" rel="noopener">Join on TOTEM &rarr;</a>
+            <a class="fact-value fact-link" href="/membership">Join the PTA &rarr;</a>
           </div>
         </div>
       </div>
@@ -148,33 +135,89 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- OPEN POSITIONS -->
+  <section class="section" id="open-roles">
+    <div class="container">
+      <div class="section-label">We Need You</div>
+      <h2 class="section-title">Open Board Positions for 2026–27</h2>
+      <p class="section-subtitle">
+        These seats are waiting for a Hirsch parent like you. No experience needed — the current board
+        will train you, and California State PTA provides free guides for every role.
+      </p>
+      <div class="board-grid">
+
+        <div class="board-card board-card-open">
+          <div class="board-avatar">&#x1F31F;</div>
+          <div class="board-name">Open Position</div>
+          <div class="board-title">Vice President</div>
+          <p class="board-bio">The president's right hand — helps lead events and steps in when needed. A great way to grow into leadership.</p>
+          <a class="btn-sm btn" style="margin-top:.75rem; display:inline-block;" href="mailto:pta.hirsch@gmail.com?subject=Interest%3A%20Vice%20President">I'm interested</a>
+        </div>
+
+        <div class="board-card board-card-open">
+          <div class="board-avatar">&#x1F50E;</div>
+          <div class="board-name">Open Position</div>
+          <div class="board-title">Financial Reviewer</div>
+          <p class="board-bio">Reviews the books twice a year to keep our finances accurate and accountable. Light, periodic time commitment.</p>
+          <a class="btn-sm btn" style="margin-top:.75rem; display:inline-block;" href="mailto:pta.hirsch@gmail.com?subject=Interest%3A%20Financial%20Reviewer">I'm interested</a>
+        </div>
+
+        <div class="board-card board-card-open">
+          <div class="board-avatar">&#x1F9FE;</div>
+          <div class="board-name">Open Position</div>
+          <div class="board-title">Financial Secretary</div>
+          <p class="board-bio">Works with the treasurer to receive, record, and deposit funds from events and fundraisers.</p>
+          <a class="btn-sm btn" style="margin-top:.75rem; display:inline-block;" href="mailto:pta.hirsch@gmail.com?subject=Interest%3A%20Financial%20Secretary">I'm interested</a>
+        </div>
+
+        <div class="board-card board-card-open">
+          <div class="board-avatar">&#x2696;&#xFE0F;</div>
+          <div class="board-name">Open Position</div>
+          <div class="board-title">Parliamentarian</div>
+          <p class="board-bio">Keeps meetings fair and on track, and helps the board follow our bylaws. Perfect for a detail-oriented parent.</p>
+          <a class="btn-sm btn" style="margin-top:.75rem; display:inline-block;" href="mailto:pta.hirsch@gmail.com?subject=Interest%3A%20Parliamentarian">I'm interested</a>
+        </div>
+
+        <div class="board-card board-card-open">
+          <div class="board-avatar">&#x2709;&#xFE0F;</div>
+          <div class="board-name">Open Position</div>
+          <div class="board-title">Corresponding Secretary</div>
+          <p class="board-bio">Handles PTA correspondence — thank-you notes, announcements, and communications with families and sponsors.</p>
+          <a class="btn-sm btn" style="margin-top:.75rem; display:inline-block;" href="mailto:pta.hirsch@gmail.com?subject=Interest%3A%20Corresponding%20Secretary">I'm interested</a>
+        </div>
+
+      </div>
       <p style="margin-top:2rem; font-size:.9rem; color:var(--text-muted); text-align:center;">
-        Interested in joining the board or a committee? <a href="mailto:pta.hirsch@gmail.com" style="color:var(--accent);">Email us</a> — we'd love to have you.
+        Curious but not ready to commit? <a href="mailto:pta.hirsch@gmail.com" style="color:var(--accent);">Email us</a> or
+        come to a <a href="/meetings" style="color:var(--accent);">meeting</a> and see how it works first.
       </p>
     </div>
   </section>
 
   <!-- COMMUNITY CONNECTIONS -->
-  <section class="section" id="connect">
+  <section class="section section-alt" id="connect">
     <div class="container">
       <div class="section-label">Stay Connected</div>
       <h2 class="section-title">Join the Conversation</h2>
       <p class="section-subtitle">We use several channels to keep Hirsch families informed and connected — pick the ones that work for you.</p>
       <div class="community-grid">
-        <a href="https://jointotem.com/ca/fremont/o-n-hirsch-elementary-pta" target="_blank" rel="noopener" class="community-card">
-          <span class="community-icon">&#x1F4F2;</span>
-          <span class="community-name">Join PTA (TOTEM)</span>
-          <span class="community-desc">Become a member, pay dues, and make donations online</span>
-        </a>
-        <a href="#" class="community-card">
+        <a href="https://chat.whatsapp.com/FNg6wn9coPvFLiYN0dNNEo?mode=ac_t" target="_blank" rel="noopener" class="community-card">
           <span class="community-icon">&#x1F4AC;</span>
           <span class="community-name">WhatsApp Community</span>
           <span class="community-desc">Quick announcements and updates for Hirsch families</span>
         </a>
-        <a href="#" class="community-card">
+        <a href="https://www.facebook.com/pages/O.%20N.%20Hirsch%20Elementary/781161008586880/" target="_blank" rel="noopener" class="community-card">
           <span class="community-icon">&#x1F4D8;</span>
-          <span class="community-name">Facebook Group</span>
+          <span class="community-name">Facebook</span>
           <span class="community-desc">Photos, event recaps, and community discussions</span>
+        </a>
+        <a href="/membership" class="community-card">
+          <span class="community-icon">&#x1F4F2;</span>
+          <span class="community-name">Become a Member</span>
+          <span class="community-desc">Join online in two minutes — dues fund programs for every student</span>
         </a>
         <a href="mailto:pta.hirsch@gmail.com" class="community-card">
           <span class="community-icon">&#x2709;&#xFE0F;</span>
@@ -185,31 +228,9 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-left">
-        <span class="footer-logo">&#x1F43E; Hirsch PTA</span>
-        <span>501(c)(3) &middot; EIN: 94-6184147</span>
-        <span>O.N. Hirsch Elementary &middot; Fremont, CA</span>
-      </div>
-      <nav class="footer-center">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/programs">Programs</a>
-        <a href="/events">Events</a>
-        <a href="/gallery">Photos</a>
-        <a href="/fundraiser">Bulldog Jog</a>
-        <a href="/volunteer">Volunteer</a>
-        <a href="/donate">Donate</a>
-      </nav>
-      <div class="footer-right">
-        <a href="mailto:pta.hirsch@gmail.com">pta.hirsch@gmail.com</a><br>
-        <span style="margin-top:.3rem; display:block;">Built with &hearts; in Fremont, CA</span>
-      </div>
-    </div>
-  </footer>
+  <div data-footer></div>
 
+  <script src="js/layout.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

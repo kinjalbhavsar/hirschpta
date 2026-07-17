@@ -12,7 +12,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600..700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <script type="application/ld+json">
   {
@@ -39,25 +39,7 @@
 
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a class="nav-logo" href="/">&#x1F43E; Hirsch PTA</a>
-      <ul class="nav-links">
-        <li><a href="/"       data-page="home">Home</a></li>
-        <li><a href="/about"       data-page="about">About</a></li>
-        <li><a href="/programs"    data-page="programs">Programs</a></li>
-        <li><a href="/events"      data-page="events">Events</a></li>
-        <li><a href="/gallery"     data-page="gallery">Photos</a></li>
-        <li><a href="/fundraiser"  data-page="fundraiser">Bulldog Jog</a></li>
-        <li><a href="/volunteer"   data-page="volunteer">Volunteer</a></li>
-        <li><a href="/donate"      data-page="donate">Donate</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+  <div data-nav></div>
 
   <!-- HERO -->
   <section class="hero" id="hero" tabindex="-1"><span id="main"></span>
@@ -72,7 +54,7 @@
         Join us and make a difference — no time commitment required.
       </p>
       <div class="hero-cta">
-        <a href="https://jointotem.com/ca/fremont/o-n-hirsch-elementary-pta" target="_blank" rel="noopener" class="btn btn-primary">Join the PTA &rarr;</a>
+        <a href="/membership" class="btn btn-primary">Join the PTA &rarr;</a>
         <a href="/donate" class="btn btn-gold-outline">Donate</a>
         <a href="/volunteer" class="btn btn-outline">Volunteer</a>
       </div>
@@ -93,8 +75,8 @@
         <div class="stat-label">Programs &amp; Activities</div>
       </div>
       <div class="stat-item">
-        <div class="stat-number">80%</div>
-        <div class="stat-label">Funds Go to Classrooms</div>
+        <div class="stat-number">$23,406</div>
+        <div class="stat-label">Raised at the 2025–26 Bulldog Jog</div>
       </div>
       <div class="stat-item">
         <div class="stat-number">411</div>
@@ -131,8 +113,9 @@
               <span><span class="fund-dot fund-dot-gold"></span> 20% school-wide programs</span>
             </div>
           </div>
-          <div style="margin-top:2rem;">
+          <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
             <a href="/programs" class="btn btn-outline">See all programs &rarr;</a>
+            <a href="/membership" class="btn btn-primary">Why join? &rarr;</a>
           </div>
         </div>
         <div class="what-sidebar">
@@ -152,34 +135,30 @@
     </div>
   </section>
 
-  <!-- NEWS -->
-  <section class="section section-alt" id="news">
+  <!-- NEW FAMILIES -->
+  <section class="section section-alt" id="start-here">
     <div class="container">
-      <div class="section-header">
-        <div>
-          <div class="section-label">Latest</div>
-          <h2 class="section-title" style="margin-bottom:0">News &amp; Updates</h2>
-        </div>
-        <a href="/events" class="view-all">View all events &rarr;</a>
-      </div>
+      <div class="section-label">New to Hirsch?</div>
+      <h2 class="section-title">Start Here</h2>
+      <p class="section-subtitle">Welcome to the Bulldog family! Three quick steps to plug into the Hirsch community.</p>
       <div class="news-grid">
         <div class="news-card">
-          <span class="news-date">May 2026</span>
-          <h3 class="news-title">Teacher Appreciation Week — May 19–23</h3>
-          <p class="news-excerpt">Join us in celebrating the amazing educators at Hirsch! Drop off treats, write a note, or help coordinate lunches for our dedicated staff.</p>
-          <a href="/events" class="news-link">View events &rarr;</a>
+          <span class="news-date">Step 1 &middot; 2 minutes</span>
+          <h3 class="news-title">Become a member</h3>
+          <p class="news-excerpt">Join online — no meetings or volunteering required. Your dues directly fund programs for every Hirsch student, and members get a voice and a vote.</p>
+          <a href="/membership" class="news-link">Join the PTA &rarr;</a>
         </div>
         <div class="news-card">
-          <span class="news-date">April 2026</span>
-          <h3 class="news-title">Reflections 2025–26 Winners Announced</h3>
-          <p class="news-excerpt">Congratulations to all students who participated in the National PTA Reflections art program this year. Winners will advance to the district level.</p>
-          <a href="/programs" class="news-link">Learn about programs &rarr;</a>
+          <span class="news-date">Step 2 &middot; 1 minute</span>
+          <h3 class="news-title">Get on the calendar</h3>
+          <p class="news-excerpt">Subscribe to the PTA calendar and never miss a movie night, festival, or meeting — it syncs straight to your phone.</p>
+          <a href="/events" class="news-link">See events &rarr;</a>
         </div>
         <div class="news-card">
-          <span class="news-date">October 2025</span>
-          <h3 class="news-title">Bulldog Jog 2025–26: Thank You!</h3>
-          <p class="news-excerpt">An incredible showing from Hirsch families! Thank you to every student who ran, every donor who gave, and every volunteer who made it happen.</p>
-          <a href="/fundraiser" class="news-link">See the recap &rarr;</a>
+          <span class="news-date">Step 3 &middot; 30 seconds</span>
+          <h3 class="news-title">Join the conversation</h3>
+          <p class="news-excerpt">Hirsch families share announcements, reminders, and questions in our WhatsApp community — the fastest way to stay in the loop.</p>
+          <a href="https://chat.whatsapp.com/FNg6wn9coPvFLiYN0dNNEo?mode=ac_t" target="_blank" rel="noopener" class="news-link">Join WhatsApp &rarr;</a>
         </div>
       </div>
     </div>
@@ -190,33 +169,33 @@
     <div class="container">
       <div class="section-header">
         <div>
-          <div class="section-label">Coming Up</div>
-          <h2 class="section-title" style="margin-bottom:0">Upcoming Events</h2>
+          <div class="section-label">Coming Up &middot; 2026–27</div>
+          <h2 class="section-title" style="margin-bottom:0">Save the Dates</h2>
         </div>
         <a href="/events" class="view-all">Full calendar &rarr;</a>
       </div>
       <div class="events-preview">
         <div class="event-item">
           <div class="event-date-badge">
-            <div class="event-date-month">May</div>
-            <div class="event-date-day">19</div>
+            <div class="event-date-month">Aug</div>
+            <div class="event-date-day">11</div>
           </div>
           <div class="event-info">
-            <div class="event-name">Teacher Appreciation Week Begins</div>
-            <div class="event-meta">May 19–23 &middot; O.N. Hirsch Elementary</div>
+            <div class="event-name">First Day of School — Welcome Back, Bulldogs!</div>
+            <div class="event-meta">Tuesday, August 11, 2026 &middot; O.N. Hirsch Elementary</div>
           </div>
           <span class="tag tag-community">Community</span>
         </div>
         <div class="event-item">
           <div class="event-date-badge">
-            <div class="event-date-month">Jun</div>
-            <div class="event-date-day">TBD</div>
+            <div class="event-date-month">Sep</div>
+            <div class="event-date-day">TBA</div>
           </div>
           <div class="event-info">
-            <div class="event-name">Field Day</div>
-            <div class="event-meta">Date TBD &middot; O.N. Hirsch Elementary</div>
+            <div class="event-name">First PTA Association Meeting of 2026–27</div>
+            <div class="event-meta">September 2026 &middot; All families welcome</div>
           </div>
-          <span class="tag tag-athletics">Athletics</span>
+          <span class="tag">Meeting</span>
         </div>
         <div class="event-item">
           <div class="event-date-badge" style="background:var(--gold)">
@@ -225,9 +204,20 @@
           </div>
           <div class="event-info">
             <div class="event-name">Bulldog Jog 2026–27 — Save the Date!</div>
-            <div class="event-meta">October 2026 &middot; Details coming soon</div>
+            <div class="event-meta">October 2026 &middot; Details coming in August</div>
           </div>
           <span class="tag tag-community">Fundraiser</span>
+        </div>
+        <div class="event-item">
+          <div class="event-date-badge">
+            <div class="event-date-month">Oct</div>
+            <div class="event-date-day">TBA</div>
+          </div>
+          <div class="event-info">
+            <div class="event-name">Harvest Festival</div>
+            <div class="event-meta">October 2026 &middot; Games, food &amp; community fun</div>
+          </div>
+          <span class="tag tag-community">Community</span>
         </div>
       </div>
       <div style="margin-top:2rem; text-align:center;">
@@ -248,22 +238,35 @@
       </div>
       <div class="photo-teaser-grid">
         <a class="gallery-item" href="/gallery">
-          <img src="assets/gallery/bulldog-jog-1.svg" alt="Bulldog Jog" loading="lazy">
+          <img src="assets/gallery/bulldog-jog-1.svg" alt="Bulldog Jog illustration" loading="lazy">
           <span class="gallery-item-caption">Bulldog Jog</span>
         </a>
         <a class="gallery-item" href="/gallery">
-          <img src="assets/gallery/harvest-1.svg" alt="Harvest Festival" loading="lazy">
+          <img src="assets/gallery/harvest-1.svg" alt="Harvest Festival illustration" loading="lazy">
           <span class="gallery-item-caption">Harvest Festival</span>
         </a>
         <a class="gallery-item" href="/gallery">
-          <img src="assets/gallery/multicultural-1.svg" alt="Multicultural Week" loading="lazy">
+          <img src="assets/gallery/multicultural-1.svg" alt="Multicultural Week illustration" loading="lazy">
           <span class="gallery-item-caption">Multicultural Week</span>
         </a>
         <a class="gallery-item" href="/gallery">
-          <img src="assets/gallery/talent-show-1.svg" alt="Talent Show" loading="lazy">
+          <img src="assets/gallery/talent-show-1.svg" alt="Talent Show illustration" loading="lazy">
           <span class="gallery-item-caption">Talent Show</span>
         </a>
       </div>
+    </div>
+  </section>
+
+  <!-- TRANSPARENCY STRIP -->
+  <section class="section" id="transparency" style="padding-top:4rem; padding-bottom:4rem;">
+    <div class="container" style="text-align:center;">
+      <div class="section-label">Transparency</div>
+      <h2 class="section-title" style="margin-bottom:1rem;">We operate in the open</h2>
+      <p class="section-subtitle" style="margin:0 auto 2rem;">
+        Association meetings are open to every family, and our agendas, minutes, and budget
+        are available to all members. Come see how decisions get made — and help make them.
+      </p>
+      <a href="/meetings" class="btn btn-outline">Meetings &amp; documents &rarr;</a>
     </div>
   </section>
 
@@ -277,7 +280,7 @@
       </p>
       <div class="cta-band-btns">
         <a href="https://jointotem.com/ca/fremont/o-n-hirsch-elementary-pta" target="_blank" rel="noopener" class="btn btn-white">Join on TOTEM &rarr;</a>
-        <a href="/about#board" class="btn btn-white-outline">Meet the Board</a>
+        <a href="/membership" class="btn btn-white-outline">Learn About Membership</a>
       </div>
     </div>
   </div>
@@ -312,31 +315,9 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-left">
-        <span class="footer-logo">&#x1F43E; Hirsch PTA</span>
-        <span>501(c)(3) &middot; EIN: 94-6184147</span>
-        <span>O.N. Hirsch Elementary &middot; Fremont, CA</span>
-      </div>
-      <nav class="footer-center">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/programs">Programs</a>
-        <a href="/events">Events</a>
-        <a href="/gallery">Photos</a>
-        <a href="/fundraiser">Bulldog Jog</a>
-        <a href="/volunteer">Volunteer</a>
-        <a href="/donate">Donate</a>
-      </nav>
-      <div class="footer-right">
-        <a href="mailto:pta.hirsch@gmail.com">pta.hirsch@gmail.com</a><br>
-        <span style="margin-top:.3rem; display:block;">Built with &hearts; in Fremont, CA</span>
-      </div>
-    </div>
-  </footer>
+  <div data-footer></div>
 
+  <script src="js/layout.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
