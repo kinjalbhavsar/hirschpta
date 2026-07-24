@@ -11,12 +11,29 @@ const navLinks  = document.querySelector('.nav-links');
 hamburger.addEventListener('click', () => {
   const open = navLinks.classList.toggle('open');
   hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  document.body.classList.toggle('menu-open', open);
 });
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
     hamburger.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
   });
+});
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+    hamburger.focus();
+  }
+});
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 900 && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+  }
 });
 
 /* Active nav link — driven by data-page on <body>.
