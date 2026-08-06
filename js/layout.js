@@ -14,6 +14,7 @@ const ICON_SPRITE = `
   <symbol id="i-brush" viewBox="0 0 24 24"><path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08"/><path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z"/></symbol>
   <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
   <symbol id="i-basketball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v18"/><path d="M3 12h18"/><path d="M5.6 5.6c3.4 3.5 3.4 9.3 0 12.8"/><path d="M18.4 5.6c-3.4 3.5-3.4 9.3 0 12.8"/></symbol>
+  <symbol id="i-soccer" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5l4.28 3.11-1.63 5.03H9.35l-1.63-5.03z"/><path d="M12 7.5V3"/><path d="M7.72 10.61L3.44 9.22"/><path d="M9.35 15.64l-2.64 3.64"/><path d="M14.65 15.64l2.64 3.64"/><path d="M16.28 10.61l4.28-1.39"/></symbol>
   <symbol id="i-tent" viewBox="0 0 24 24"><path d="M3.5 20L12 4l8.5 16"/><path d="M12 14l3.5 6"/><path d="M2 20h20"/></symbol>
   <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><path d="M12 18v4"/></symbol>
   <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a13.9 13.9 0 0 1 3.6 9 13.9 13.9 0 0 1-3.6 9 13.9 13.9 0 0 1-3.6-9A13.9 13.9 0 0 1 12 3z"/></symbol>
